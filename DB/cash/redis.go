@@ -17,6 +17,8 @@ func VisitHappened() (err error) {
 	}
 	var data []byte
 	data, err = redis.Bytes(conn.Do("GET", key))
+	fmt.Println(err)
+
 	if err != nil && data!=nil{
 		return
 	}
@@ -32,4 +34,21 @@ func VisitHappened() (err error) {
 	}
 
 	return
+}
+func VisitGetNumber() (number string,err error) {
+	conn := Pool.Get()
+	defer conn.Close()
+	var key = "visit"
+
+	_, err = redis.String(conn.Do("PING"))
+
+	if err != nil {
+		return "0",fmt.Errorf("cannot 'PING' db: %v", err)
+	}
+	var data []byte
+	data, err = redis.Bytes(conn.Do("GET", key))
+	if err != nil && data!=nil{
+		return
+	}
+	return string(data),nil
 }

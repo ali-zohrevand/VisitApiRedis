@@ -1,6 +1,7 @@
 package cash
 
 import (
+	"fmt"
 	"github.com/garyburd/redigo/redis"
 	"os"
 	"os/signal"
@@ -14,6 +15,7 @@ var (
 
 func init() {
 	redisHost := os.Getenv("REDIS_HOST")
+	fmt.Println("REDIS_HOST ",redisHost )
 	if redisHost == "" {
 		redisHost = ":6379"
 	}

@@ -7,5 +7,6 @@ import (
 
 func Visit(w http.ResponseWriter, r *http.Request, next http.HandlerFunc) {
 	cash.VisitHappened()
-	w.Write([]byte("Hello, World!"))
+	number,_:=cash.VisitGetNumber()
+	w.Write([]byte(number))
 }
