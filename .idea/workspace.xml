@@ -135,14 +135,53 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build Server.go">
+  <component name="RunManager" selected="Go Build.go build Server.go (1)">
+    <configuration name="go build Server.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="VisitApi" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/Server.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build Server.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="VisitAPI" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/Server.go" />
+      <package value="github.com/ali-zohrevand/VisitApi" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestVisitGetNumber in github.com/ali-zohrevand/VisitApi/DB/cash" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="VisitAPI" />
+      <working_directory value="$PROJECT_DIR$/DB/cash" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/ali-zohrevand/VisitApi/DB/cash" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestVisitGetNumber$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestVisitHappened in github.com/ali-zohrevand/VisitApi/DB/cash" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="VisitAPI" />
+      <working_directory value="$PROJECT_DIR$/DB/cash" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/ali-zohrevand/VisitApi/DB/cash" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestVisitHappened$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Go Test.TestVisitHappened in github.com/ali-zohrevand/VisitApi/DB/cash" />
         <item itemvalue="Go Test.TestVisitGetNumber in github.com/ali-zohrevand/VisitApi/DB/cash" />
+        <item itemvalue="Go Build.go build Server.go (1)" />
         <item itemvalue="Go Build.go build Server.go" />
-        <item itemvalue="Go Build.go build Server.go" />
-        <item itemvalue="Go Test.TestVisitGetNumber in github.com/ali-zohrevand/VisitApi/DB/cash" />
+        <item itemvalue="Go Test.TestVisitHappened in github.com/ali-zohrevand/VisitApi/DB/cash" />
       </list>
     </recent_temporary>
   </component>
