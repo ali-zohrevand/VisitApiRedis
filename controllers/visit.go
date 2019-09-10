@@ -9,5 +9,4 @@ func Visit(w http.ResponseWriter, r *http.Request, next http.HandlerFunc) {
 	cash.VisitHappened()
 	number, _ := cash.VisitGetNumber()
 	w.Write([]byte(number))
-	panic("test")
 }
