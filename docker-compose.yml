@@ -6,7 +6,10 @@ services:
       - "6379:6379"
   node-app:
     build: .
+    restart: always
     environment:
       REDIS_HOST: redis-server:6379
     ports:
       - "80:5000"
+volumes:
+  mysql-data:
