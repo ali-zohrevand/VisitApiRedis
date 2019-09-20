@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: visit-api--port
 spec:
-  type: NodePort
+  type: NodePort #just for dev not ops
   ports:
-    - port: 3050
-      targetPort: 5000
-      nodePort: 31515
+    - port: 3050 #for multi client pod, access other pods.
+      targetPort: 5000 #open traffic port inside pod
+      nodePort: 31515 #we see in outside world  between 30000-32767
   selector:
     component: api
