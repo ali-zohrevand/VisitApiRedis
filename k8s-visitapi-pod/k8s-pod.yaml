@@ -1,12 +1,12 @@
-apiVeriosn: v1
+apiVersion: v1
 kind: Pod
 metadata:
-  name: visit-pod
-  lables:
+  labels:
     component: api
+  name: visit-pod
 spec:
   containers:
     - name: visitapi
       image: alizohrevand/visitapi
       ports:
-        containerPort: 5000
+        - containerPort: 5000
