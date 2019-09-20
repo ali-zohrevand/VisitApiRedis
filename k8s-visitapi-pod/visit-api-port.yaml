@@ -1,0 +1,12 @@
+apiVeriosn: v1
+kind: Service
+metadata:
+  name: visit-api--port
+spec:
+  type: NodePort
+  ports:
+    - ports: 3050
+      targetPort: 5000
+      nodePort: 31515
+  selector:
+    component: api
